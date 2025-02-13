@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  width: 450px;
+  height: 450px;
+  outline: 2px solid;
+  margin: 60px auto;
+
+  display: flex;
+
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+
+  /* flex-flow: flex-direction flex-wrap */
+  /* flex-flow: row wrap; */
+
+  /* main-axis */
+  /* justify-content: center; */
+
+  /* cross-axis*/
+  /* align-items: center; */
+
+  /* cross-axis when flex-wrap is set to wrap or wrap reverse*/
+  /* align-content: space-evenly; */
+}
+
+.element {
+  width: 200px;
+  height: 100px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.element-1 {
+  background-color: slateblue;
+}
+
+.element-2 {
+  background-color: coral;
+}
+
+.element-3 {
+  background-color: darkgreen;
+}
+
+.element-4 {
+  background-color: purple;
+}
