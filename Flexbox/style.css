@@ -32,12 +32,21 @@ body {
 }
 
 .element {
-  width: 200px;
+  width: 100px;
   height: 100px;
   line-height: 50px;
   text-align: center;
   color: #fff;
   font-size: 2rem;
+
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex-basis: auto; */
+
+  /* flex: flex-grow flex-shrink flex-basis; */
+  /* flex: auto */
+  /* flex: 1; */
+  flex: 1 1 auto;
 }
 
 .element-1 {
