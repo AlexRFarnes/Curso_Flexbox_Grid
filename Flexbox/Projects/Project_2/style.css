@@ -25,7 +25,7 @@ body {
 .card {
   width: 340px;
   margin: auto;
-  background-color: var(--very-pale-blue);
+  background-color: #fff;
   border-radius: 2em;
   overflow: hidden;
 }
@@ -39,4 +39,72 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.card__texts {
+  padding: 2.5em 1.7em;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 1.7rem;
+  color: var(--dark-blue);
+}
+
+.card__paragraph {
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+  margin: 1.2em 0 1.5em;
+}
+
+.card__plan {
+  display: flex;
+  align-items: center;
+  padding: 1.2em 1em;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.7em;
+}
+
+.card__icon {
+  margin-right: 5%;
+}
+
+.card__name {
+  font-size: 1rem;
+  color: var(--dark-blue);
+}
+
+.card__change {
+  margin-left: auto;
+  color: var(--bright-blue);
+}
+
+.card__cta {
+  display: block;
+  background-color: var(--bright-blue);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1em;
+  margin-top: 2em;
+  padding: 1.5em 1em;
+  box-shadow: 0 10px 10px -8px var(--bright-blue);
+  font-weight: bold;
+}
+
+.card__cta--gray {
+  margin-top: 0.7em;
+  background-color: #fff;
+  color: var(--desaturated-blue);
+  box-shadow: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+  }
+
+  .card {
+    width: 400px;
+  }
 }
