@@ -1,0 +1,42 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  --font1: 'Red Hat Display', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font1);
+  background-color: var(--pale-blue);
+  display: flex;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.card {
+  width: 340px;
+  margin: auto;
+  background-color: var(--very-pale-blue);
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  display: block;
+  height: 180px;
+  width: 100%;
+  background-image: url('./images/illustration-hero.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
