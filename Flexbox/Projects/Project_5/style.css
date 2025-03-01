@@ -1,11 +1,9 @@
 :root {
   /* ### Primary */
-
   --dark-violet: hsl(256, 26%, 20%);
   --grayish-blue: hsl(216, 30%, 68%);
 
   /* ### Neutral */
-
   --very-dark-violet: hsl(270, 9%, 17%);
   --dark-grayish-violet: hsl(273, 4%, 51%);
   --very-light-gray: hsl(0, 0%, 98%);
@@ -14,6 +12,7 @@
   --font1: 'DM Serif Display', serif;
   --font2: 'Karla', sans-serif;
 
+  /* Padding */
   --padding-container: 80px 0;
 }
 
@@ -24,4 +23,226 @@
 
 body {
   font-family: var(--font2);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
+.hero {
+  background-color: var(--dark-violet);
+  color: #fff;
+  --padding-container: 0;
+}
+
+.nav {
+  background-color: #fff;
+}
+
+.nav__container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__links {
+  display: none;
+}
+
+.nav__logo,
+.nav__icon {
+  display: block;
+}
+
+.hero__main {
+  width: 100%;
+}
+
+.hero__main::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 370px;
+  background-image: url('./images/image-intro-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__texts {
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.7rem;
+  font-family: var(--font1);
+  font-weight: 400;
+}
+
+.hero__paragraph {
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+.cta {
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8em 2.2em;
+  display: inline-block;
+  margin-top: 1.5em;
+}
+
+.features {
+  text-align: center;
+}
+
+.title--features {
+  position: relative;
+  padding-top: 30px;
+}
+
+.title--features::before {
+  content: '';
+  display: block;
+  background-color: var(--dark-grayish-violet);
+  width: 120px;
+  height: 1px;
+  margin: 0 auto;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+}
+
+.features__items {
+  margin-top: 3.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.features__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.features__title {
+  font-family: var(--font1);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.features__paragraph {
+  margin-top: 1em;
+  line-height: 1.5;
+  color: var(--dark-grayish-violet);
+}
+
+.find {
+  padding: 80px 0;
+  --padding-container: 60px 30px;
+}
+
+.find__container {
+  color: #fff;
+  background-color: var(--dark-violet);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.find__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.footer {
+  background-color: var(--very-light-gray);
+}
+
+.footer__container {
+  position: relative;
+  z-index: 1;
+}
+
+.footer__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/bg-pattern-footer-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding-bottom: 2.5em;
+  margin-bottom: 2.5em;
+  border-bottom: 1px solid var(--dark-grayish-violet);
+}
+
+.footer__logo {
+  display: block;
+}
+
+.footer__media {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social {
+  text-decoration: none;
+}
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--dark-grayish-violet);
+  margin-bottom: 1em;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--dark-violet);
+  font-weight: 700;
+  text-transform: uppercase;
 }
