@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial';
+}
+
+.grid {
+  width: 90%;
+  max-width: 600px;
+  margin: 80px auto;
+  overflow: hidden;
+  outline: 3px solid;
+  height: 500px;
+}
+
+.item {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.item-1 {
+  background-color: slateblue;
+}
+
+.item-2 {
+  background-color: darkmagenta;
+}
+
+.item-3 {
+  background-color: tomato;
+}
+
+.item-4 {
+  background-color: midnightblue;
+}
+
+.item-5 {
+  background-color: seagreen;
+}
+
+.item-6 {
+  background-color: crimson;
+}
