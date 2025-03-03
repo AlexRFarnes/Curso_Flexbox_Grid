@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial';
+}
+
+.grid {
+  display: grid;
+
+  width: 90%;
+  max-width: 700px;
+  height: 600px;
+  outline: 3px solid;
+  margin: 20px auto;
+}
+
+.item {
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-color: crimson;
+}
+
+.main {
+  background-color: steelblue;
+}
+
+.sidebar {
+  background-color: purple;
+}
+
+.footer {
+  background-color: chocolate;
+}
