@@ -10,8 +10,43 @@ body {
 .grid {
   display: grid;
 
+  /* max-content | min-content | fit-content */
+  /* grid-template-columns: fit-content(300px); */
+  /* grid-template-columns: minmax(min-content, 1fr); */
+
+  /* grid-template-columns: [header-start footer-start side-start] 1fr [main-start side-end] 1fr 1fr [main-end header-end footer-end];
+  grid-template-rows: [header-start] 1fr [header-end side-start] 1fr [footer-start side-end] 1fr [footer-end]; */
+
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+
+  /* stretch | start | end | center */
+  /* justify-items: stretch; */
+
+  /* stretch | start | end | center | baseline */
+  /* align-items: stretch; */
+
+  /*place-items:  align-items justify-items: */
+  /* place-items: stretch stretch; */
+
+  /* stretch | center | start | end | space-around | space-between | space-evenly */
+  /* justify-content: stretch; */
+
+  /* stretch | center | start | end | space-around | space-between | space-evenly */
+  /* align-content: stretch; */
+
+  /* place-content: align-content justify-content */
+  /* place-content: stretch stretch; */
+
+  /* grid-template: grid-template-rows / grid-template-columns; */
+  /* grid-template: repeat(3, 1fr) / repeat(12, 1fr); */
+  /* grid-template:
+    'area1 area2 area3' 1fr
+    'area1 area2 area3' 1fr
+    / 100px 1fr 200px; */
+
   width: 90%;
-  max-width: 600px;
+  /* max-width: 600px; */
   height: 600px;
   outline: 3px solid;
   margin: 20px auto;
@@ -25,16 +60,28 @@ body {
 
 .item-1 {
   background-color: slateblue;
+  /* grid-column: header;
+  grid-row: header; */
+  /* justify-self: center; */
+  /* align-self: center; */
 }
 
 .item-2 {
   background-color: crimson;
+  /* grid-column: footer;
+  grid-row: footer; */
+  /* place-self: center; */
 }
 
 .item-3 {
   background-color: coral;
+  /* grid-column: main; */
+  /* place-self: align-self justify-self */
+  /* place-self: center center; */
 }
 
 .item-4 {
   background-color: indigo;
+  /* grid-column: side;
+  grid-row: side; */
 }
