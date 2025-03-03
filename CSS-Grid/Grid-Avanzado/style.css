@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial';
+}
+
+.grid {
+  display: grid;
+
+  width: 90%;
+  max-width: 600px;
+  height: 600px;
+  outline: 3px solid;
+  margin: 20px auto;
+}
+
+.item {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.item-1 {
+  background-color: slateblue;
+}
+
+.item-2 {
+  background-color: crimson;
+}
+
+.item-3 {
+  background-color: coral;
+}
+
+.item-4 {
+  background-color: indigo;
+}
