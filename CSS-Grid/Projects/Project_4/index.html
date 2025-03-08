@@ -20,14 +20,53 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- 
-  About
-  Careers
-  Events
-  Products
-  Support
+    <header class="hero">
+      <nav class="nav container" id="nav">
+        <img src="./images/logo.svg" alt="Go to home" class="nav__logo" />
 
-  Immersive experiences that deliver
+        <ul class="nav__links">
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Events</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Support</a></li>
+        </ul>
+
+        <a href="#" class="nav__close">
+          <img
+            src="./images/icon-close.svg"
+            alt="Close navigation"
+            class="nav__img" />
+        </a>
+        <a href="#nav" class="nav__hamburger">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="Open navigation"
+            class="nav__img" />
+        </a>
+      </nav>
+
+      <div class="hero__text container">
+        <h1 class="hero__title">Immersive experiences that deliver</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="leader">
+        <picture class="leader__picture">
+          <source
+            class="leader__img"
+            srcset="./images/desktop/image-interactive.jpg"
+            media="(min-width:768px)" />
+          <img
+            src="./images/mobile/image-interactive.jpg"
+            alt="Person using a VR headset"
+            class="leader__img" />
+        </picture>
+      </section>
+    </main>
+
+    <!-- 
 
   The leader in interactive VR
 
